@@ -38,3 +38,10 @@ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 ```bash
 docker run -it --rm -v $PWD:/tmp -w /tmp -p 8888:8888 --gpus all tensorflow/tensorflow:latest-gpu-jupyter
 ````
+
+Convert saved model:
+
+```
+pip install tensorflowjs
+tensorflowjs_converter --input_format keras generator.h5 tfjs/model/
+```

@@ -2,4 +2,7 @@
 .DS_Store
 logs/
 _input/
-
+_output/
+venv/
+tfjs/model
+_checkpoints/
