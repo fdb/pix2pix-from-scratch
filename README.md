@@ -11,7 +11,7 @@ I'm using [Anaconda](https://www.anaconda.com/) to set up my Python 3 environmen
 Initialize a new environment with Tensorflow as a dependency:
 
 ```
-conda create -n pix2pix tensorflow jupyterlab
+conda create -n pix2pix -c anaconda tensorflow-gpu matplotlib jupyterlab pydot
 ```
 
 Activate the new environment:
