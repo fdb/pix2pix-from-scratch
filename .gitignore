@@ -1,8 +1,5 @@
 .ipynb_checkpoints
 .DS_Store
-logs/
-_input/
-_output/
+_projects/
 venv/
 tfjs/model
-_checkpoints/
