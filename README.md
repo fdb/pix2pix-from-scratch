@@ -17,16 +17,16 @@ I use a machine with Ubuntu 20.04 and [Lambda Stack](https://lambdalabs.com/lamb
 The easiest method was to use Docker:
 
 ```bash
-docker run -it --rm -v $PWD:/tmp -w /tmp -p 8888:8888 --gpus all tensorflow/tensorflow:latest-gpu-jupyter
+docker run -it --rm -v $PWD:/tf -w /tf -p 8888:8888 --gpus all tensorflow/tensorflow:latest-gpu-jupyter
 ````
 
-Then open a browser to the shown URL and open `pix2pix.ipynb`. 
+Then open a browser to the shown URL and open `pix2pix.ipynb`.
 
 Change the directories as required to set up your project.
 
 ## Convert Model
 
-Once the model is running, run the last cell to convert the generator to Keras (`.h5`). 
+Once the model is running, run the last cell to convert the generator to Keras (`.h5`).
 
 To convert the saved model to tensorflowjs:
 
