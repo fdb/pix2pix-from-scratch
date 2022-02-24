@@ -1,6 +1,5 @@
 import os
 from glob import glob
-from venv import create
 from PIL import Image, ImageOps
 import argparse
 
